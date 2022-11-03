@@ -11,7 +11,7 @@ import pandas as pd
 
 def clean_data():
 
-    df = pd.read_csv("solicitudes_credito.csv", sep=";")
+    df = pd.read_csv("solicitudes_credito.csv", sep=";", index_col = 0)
 
     #
     # Inserte su código aquí
@@ -33,7 +33,3 @@ def clean_data():
 
     return df
 
-if __name__ == "__main__":
-    df = clean_data()
-    print(df.dtypes)
-    print(df.sexo.value_counts())
