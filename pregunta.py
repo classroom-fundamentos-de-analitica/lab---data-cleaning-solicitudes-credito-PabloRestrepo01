@@ -33,4 +33,7 @@ def clean_data():
 
     return df
 
-print(clean_data())
+if __name__ == "__main__":
+    df = clean_data()
+    print(df.dtypes)
+    print(df.sexo.value_counts())
