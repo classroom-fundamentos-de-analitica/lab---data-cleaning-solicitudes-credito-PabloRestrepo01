@@ -32,3 +32,5 @@ def clean_data():
     df.drop_duplicates(inplace=True)
 
     return df
+
+print(clean_data())
